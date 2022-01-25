@@ -1327,10 +1327,10 @@ p.board {
     font-weight: 500;
     line-height: 22pt;  
 }
-.article img {
+/*.article img {
     width: 50%;
     left: 0;
-}
+}*/
 mark {
     background: #ebeff8;
     color: #28396d;
