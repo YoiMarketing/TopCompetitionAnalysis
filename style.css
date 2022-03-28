@@ -391,10 +391,10 @@ ul.dropdown-menu.show {
 .darkicon .sports-item >.choose {
     color: #bc976c;
 }
-.sports-item > .bets::before, .sports-item >.basketball::before ,.sports-item > .baseball::before {
+.sports-item > .bets::before, .sports-item > .basketball::before, .sports-item > .baseball::before, .sports-item > .football::before {
     left: -40px;
 }
-.bets::before, .basketball::before ,.baseball::before {
+.bets::before, .basketball::before, .baseball::before, .football::before {
     position: absolute;
     display: inline-block;
     text-align: center;
@@ -2343,6 +2343,9 @@ mark {
     .sports-item > a {
         display:inline-block;
     }
+/*    .sports-item > a.football {
+        width: 143px;
+    }*/
     .sports {
         overflow-y: hidden;
         margin-top: .6rem!important;
