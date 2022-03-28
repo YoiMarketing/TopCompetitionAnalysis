@@ -2391,21 +2391,21 @@ mark {
         align-items: center;
         height: 45px;
     }
-    .sports-item > .bets::before, .sports-item > .basketball::before , .sports-item > .baseball::before  {
+    .sports-item > .bets::before, .sports-item > .basketball::before, .sports-item > .baseball::before, .sports-item > .football::before {
         left: 28px;
     }
-    .bets::before, .basketball::before ,.baseball::before {
+    .bets::before, .basketball::before, .baseball::before, .football::before {
         top: -35px;
-    }       
+    }
     .choose::before, .basketball .choose::before {
         top: -35px;
         left: 28px;
     }
-    .newcontest-typeapp > .baseball::before, .newcontest-typeapp > .basketball::before {
+    .newcontest-typeapp > .baseball::before, .newcontest-typeapp > .basketball::before{
         top: 0px;
         left: 0px;
     }
-    .newcontest-typeapp > .baseball, .newcontest-typeapp > .basketball{
+    .newcontest-typeapp > .baseball, .newcontest-typeapp > .basketball {
         position: relative;
         width: 30px;
         height: 37px;
