@@ -36,6 +36,7 @@ a {
     display: flex;
     flex-direction: row;
     flex-shrink: 1;
+    width: 75%;
     min-width: 768px;
     height: 60px;
     align-items: center;
@@ -119,7 +120,7 @@ a {
     -webkit-transform: rotate(45deg);
 }
 ul > .navitem {
-    font-size: 14pt;
+    font-size: calc(.97rem + .17vw);
     font-weight: 600;
     letter-spacing: 1px;
     display: inline-block;
@@ -149,7 +150,7 @@ ul.dropdown-menu.show {
     color: #fff;
     background: #1b232c;
     height: 40px; 
-    font-size: 14pt;
+    font-size: calc(.97rem + .17vw);
     font-weight: 600;
     text-transform: uppercase;
     transition: 1s;
@@ -197,6 +198,7 @@ ul.dropdown-menu.show {
     text-align: center;
     line-height: 40px;
     margin-left: 10px;
+    margin-right: 12px;
     font-size: 14pt;
     font-weight: 800;
     font-family: 'Noto Sans HK', sans-serif;
@@ -207,7 +209,7 @@ ul.dropdown-menu.show {
     display: inline-block;
     color: #000;
     width: 100%;
-    font-size: 14pt;
+    font-size: calc(.97rem + .17vw);
     font-weight: 800;
     text-decoration: none;
     text-transform: uppercase;
@@ -289,11 +291,15 @@ ul.dropdown-menu.show {
 .wrap.darkmode {
     background: #1a1a1a;
 }
+.darkmode .breadbar {
+    width: 100%;
+}
 .breadbar {
     background: #212121;
-    margin-top: 85px;/*
+    margin-top: 83px;/*
     margin-left: 10px;*/
     padding: 10px;
+    width: 75%;
     height: 45px;
     font-family: sans-serif;
     font-weight: 600;
@@ -333,20 +339,20 @@ ul.dropdown-menu.show {
 .sports {
     width: 100%;
     position: sticky;
-    top: calc(8%);
+    top: 7.9%;
     background: #151515;
     margin: auto;
     margin-top: .4rem;
     border-radius: 4px;
     z-index: 9;
 }
-.sports-item > button , .sports-item > a{    
+.sports-item > button , .sports-item > a {    
     border: none;
     background: #151515;
     text-transform: uppercase;
     font-family: sans-serif;
     font-weight: 700;
-    font-size: 16pt;
+    font-size: calc(.95rem + .3vw);
     color: #ddb966;
 }
 .sports ul {
@@ -356,8 +362,7 @@ ul.dropdown-menu.show {
     height: 80px;
     margin-bottom: .8rem!important;
 }
-.sports-item {/*
-    outline: #222 1px dotted;*/
+.sports-item {
     position: relative;
     list-style: none;
 }
@@ -391,10 +396,10 @@ ul.dropdown-menu.show {
 .darkicon .sports-item >.choose {
     color: #bc976c;
 }
-.sports-item > .bets::before, .sports-item > .basketball::before, .sports-item > .baseball::before, .sports-item > .football::before {
+.sports-item > .bets::before, .sports-item >.basketball::before ,.sports-item > .baseball::before, .sports-item > .football::before {
     left: -40px;
 }
-.bets::before, .basketball::before, .baseball::before, .football::before {
+.bets::before, .basketball::before ,.baseball::before, .football::before {
     position: absolute;
     display: inline-block;
     text-align: center;
@@ -444,6 +449,7 @@ ul.dropdown-menu.show {
     position: relative;*/
 }
 .contest {
+    width: 75%;
     margin: auto;
     min-width: 768px;
     height: 100%;
@@ -553,8 +559,7 @@ ul.dropdown-menu.show {
 .newcontest-content::-webkit-scrollbar-track {
     background: #a42;
     width: 5px;
-}*/
-/* 
+}
 .newcontest-contentappI {
     background: #151515;
 }
@@ -671,8 +676,7 @@ ul.dropdown-menu.show {
     padding-left: 0;
     margin-top: -8px;
 }
-.teamlist {/*
-    outline: #5a6 1px solid;*/
+.teamlist {
     width: 130px;
     height: 20px;
     line-height: 18px;
@@ -1063,10 +1067,10 @@ p.board {
     box-sizing: border-box;
     background: #fff;
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 2.5rem;
 }
-.category > .row {/*
-    justify-content: space-between;*/
+.category > .row {
+    width: 75%;
     margin: auto;
     padding-bottom: 50px;
     --bs-gutter-x: 0;
@@ -1162,7 +1166,7 @@ p.board {
 }*/
 .articles {
     background: #fff;
-    padding-top: 80px;
+    padding-top: calc(60px + 2vh);
     text-align: left;
 }
 .articles h1 {
@@ -1209,14 +1213,10 @@ p.board {
     padding: .5rem 0 .7rem 0;
     letter-spacing: 1;
 }
-.article .btn:hover {
-}
 .article .btn-checked:focus, .article .btn:focus {
     outline: none;
     box-shadow: none;
-}/*
-.article .btn:hover ~ .article .btn::before {
-}*/
+}
 .article .btn::before {
     content: "+";
     font-size: 17.5pt;
@@ -1274,6 +1274,7 @@ p.board {
     letter-spacing: 2px;
 }
 .articles-inner {
+    width: 75%;
     margin: auto;
     padding-top: 50px;
     border-bottom: #ccc 1px solid ;
@@ -1319,6 +1320,7 @@ p.board {
     margin-right: 5px;
 }
 .articles-body {
+    width: 50%;
     padding: 50px 0;
     margin: auto;
     color: #888;
@@ -1327,10 +1329,10 @@ p.board {
     font-weight: 500;
     line-height: 22pt;  
 }
-/*.article img {
+.article img {
     width: 50%;
     left: 0;
-}*/
+}
 mark {
     background: #ebeff8;
     color: #28396d;
@@ -1392,8 +1394,7 @@ mark {
     height: 100%;
     display: flex;   
 }
-.logininner {/*
-    outline: #CCC 2px solid;*/
+.logininner {
     background: #1b232c;
     padding: 60px;
     width: 450px;
@@ -1896,6 +1897,10 @@ mark {
     fill: #444;
     fill-rule: nonzero;
 }
+.digitals {
+    max-width: 100%;
+    max-height: 100%;
+}
 .digitalb {
     position: relative;
     width: 100%;
@@ -1942,7 +1947,58 @@ mark {
     80% { opacity: 0;}
     100% { opacity: 0;}
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .brand-inner {
+        width: 100%;
+    }
+    .member { 
+        width: 100px;
+    }
+    .login {
+        width: 60px;
+    }
+    .breadbar {
+        width: 100%;
+    }
+    .sports.darkicon {
+        width: calc(100% - 3vw);
+    }
+    .contest {
+        width: 100%;
+    }
+    .focustopic-inner {
+        width: 95%;
+    }
+    .carousel-control-next, .carousel-control-prev {
+        width: 5%;
+    }
+    .category {
+        padding-top: 1.7rem;
+    }
+    .category > .row {
+        width: calc(100% - 1.2vw);;
+    }
+    .categorycard {
+        width: 25%;
+    }
+    .articles-inner {
+        width: 100%;
+        padding-top: 40px;
+    }
+    .articles h1 {
+        font-size: calc(1rem + 2vw);
+        line-height: calc(2rem + 1.3vw);
+    }
+    .articlestxt { 
+        padding-top: 70px;
+        padding-top: calc(.1rem + 6vw);
+        padding-left: 40px;
+    }
+    .articles-body { 
+        width: 75%;
+    }
+}
+@media screen and (max-width: 767px) {
     .brand {
         justify-content: flex-start;
     }
@@ -2025,6 +2081,7 @@ mark {
         transform: translate(-100%, 0);
         transition: transform .7s cubic-bezier(0.77,0.2,0.05,1.0);
     }
+    
     .hamburgermenu li {
         display: block;
         font-size: 15pt;
@@ -2033,24 +2090,14 @@ mark {
     .hamburgermenu li.memberlink {
         padding: 20px 0;
     }
- /*   .memberlink:first-child {
-        margin-top: 10px;
-        border-top: #888 1px solid;
-    }*/
     .hamburger input:checked ~ ul {
         transform: none;
     }
-    /*.logo {
-        width: 150px;
-    }*/
-   /* .logo > img {
-        min-width: 154px;
-    }*/
     .memberlink-logo img {
         width:154px;
         margin: 0 0 10px 12px;
     }
-    .member {
+    .member { 
         width: 90px;
         height: 35px;
         line-height: 35px;
@@ -2060,6 +2107,7 @@ mark {
         font-size: 11pt;
     }
     .login {
+        margin-right: 0;
         width: 60px;
         height: 35px;
         line-height: 35px;
@@ -2078,7 +2126,10 @@ mark {
     .titlelineb {
         padding-left: 0;
         padding-right: 0;
-    }   
+    }  
+    .brand-inner {
+        width: 100%;
+    } 
     .brand-inner .login { 
         position: absolute;
         right: 4%;
@@ -2130,6 +2181,7 @@ mark {
         padding-top: 0;
     }
     .category > .row {
+        width: 100%;
         padding-bottom: 0;
     }
     .category > .focustopic-title { 
@@ -2137,13 +2189,13 @@ mark {
         padding-bottom: 2.5rem;
     }
     .categorycard {
+        width: 100%;
         border-bottom: #ccc 1px solid;
     }
     .card {
         padding: 20px 0;
     }
-    .categorycard .card-img-top {/*
-        outline: steelblue 1px dotted;*/
+    .categorycard .card-img-top {
         width: 33%;
         height: auto;
         padding-top: 1rem;
@@ -2163,6 +2215,7 @@ mark {
         padding: 0 1rem;
     }
     .articles-inner {
+        width: 100%;
         padding-top: 20px;
         padding-bottom: 50px;
     }
@@ -2173,6 +2226,7 @@ mark {
         width: 100%;
     }
     .articles-body { 
+        width: 100%;
         padding-left: 1rem;
         padding-right: 1rem;
     }
@@ -2183,7 +2237,6 @@ mark {
         -o-filter: none;
         filter: none;
     }
-    
     .article-menu-box-list {
         padding-left: 1.3rem;
     }
@@ -2196,7 +2249,7 @@ mark {
         font-size: 11.5pt;
     }
     .carousel-control-next, .carousel-control-prev {
-        width: 13%;
+        width: 10%;
     }
     .loginwrapper {  
         height: auto;
@@ -2305,10 +2358,11 @@ mark {
         padding-top: 3px;
     }
     .breadbar {
+        width: 100%;
         margin-top: 75px;
     }
     .breadbar.lightmode {
-        margin-top: -15px;
+        margin-top: -7px;
     }
     .bets ::before {
         white-space: pre-line;
@@ -2350,12 +2404,9 @@ mark {
     .sports-item > a {
         display:inline-block;
     }
-/*    .sports-item > a.football {
-        width: 143px;
-    }*/
     .sports {
         overflow-y: hidden;
-        margin-top: .6rem!important;
+        margin-top: .5rem!important;
     }
     .sports::-webkit-scrollbar {
         width: 0px;
@@ -2400,10 +2451,11 @@ mark {
     }
     .sports-item > .bets::before, .sports-item > .basketball::before, .sports-item > .baseball::before, .sports-item > .football::before {
         left: 28px;
-    }
-    .bets::before, .basketball::before, .baseball::before, .football::before {
         top: -35px;
     }
+    .bets::before, .basketball::before, .baseball::before, .football::before {
+        top: 0;
+    }       
     .choose::before, .basketball .choose::before {
         top: -35px;
         left: 28px;
@@ -2418,6 +2470,9 @@ mark {
         height: 37px;
         margin-top: 5%;
         margin-left: 30%;
+    }
+    .newcontest-typeapp > .basketball::before {
+        top: 0px;
     }
     .end {
         padding-bottom: 150px;
@@ -2451,7 +2506,6 @@ mark {
         padding: 0% 5%;
         transform: skewY(-15deg);
     }
-    
     .digitals {
         width: 100%;
         height: 100%;
@@ -2461,7 +2515,6 @@ mark {
         max-height: 100%;
         top: -187px;
     }
-    
     .digitalgray .digital .fil0, .digitalgray .digitals > svg  {
         fill: #4b4b4b;
     }
