@@ -650,7 +650,7 @@ ul.dropdown-menu.show {
     border-right: #414141 1px solid;
     width: 30px;
 }
-.newcontest-item > .baseball::before, .newcontest-item > .basketball::before {
+.newcontest-item > .baseball::before, .newcontest-item > .basketball::before, .newcontest-item > .football::before {
     margin-top: 10px;
     left: 1.8%;
 }
@@ -1613,13 +1613,13 @@ mark {
     margin-left: 2px;
     margin-right: 2rem;
 }
-.memberlink:nth-child(1)::before{
+.memberlink.memberlink-member::before{
     background-image: url('..//img/member.svg');
 }
-.memberlink:nth-child(2)::before{
+.memberlink.memberlink-safety::before{
     background-image: url('..//img/safety.svg');
 }
-.memberlink:nth-child(3)::before{
+.memberlink.memberlink-link::before{
     background-image: url('..//img/link.svg');
 }
 .membernav a {
@@ -2026,24 +2026,31 @@ mark {
         transition: transform .7s cubic-bezier(0.77,0.2,0.05,1.0);
     }
     .hamburgermenu li {
-        padding: 20px 0;
+        display: block;
         font-size: 15pt;
         border-bottom: #888 1px solid;
     }
-    .memberlink:first-child {
+    .hamburgermenu li.memberlink {
+        padding: 20px 0;
+    }
+ /*   .memberlink:first-child {
         margin-top: 10px;
         border-top: #888 1px solid;
-    }
+    }*/
     .hamburger input:checked ~ ul {
         transform: none;
     }
-    .logo {
+    /*.logo {
         width: 150px;
-    }
-    .logo > img {
+    }*/
+   /* .logo > img {
         min-width: 154px;
+    }*/
+    .memberlink-logo img {
+        width:154px;
+        margin: 0 0 10px 12px;
     }
-    .member { 
+    .member {
         width: 90px;
         height: 35px;
         line-height: 35px;
@@ -2401,11 +2408,11 @@ mark {
         top: -35px;
         left: 28px;
     }
-    .newcontest-typeapp > .baseball::before, .newcontest-typeapp > .basketball::before{
+    .newcontest-typeapp > .baseball::before, .newcontest-typeapp > .basketball::before, .newcontest-typeapp > .football::before {
         top: 0px;
         left: 0px;
     }
-    .newcontest-typeapp > .baseball, .newcontest-typeapp > .basketball {
+    .newcontest-typeapp > .baseball, .newcontest-typeapp > .basketball, .newcontest-typeapp > .football {
         position: relative;
         width: 30px;
         height: 37px;
